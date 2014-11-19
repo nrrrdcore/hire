@@ -382,7 +382,7 @@ footer p {
     height: 82px;
     width: 82px;
     float: none;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -408,7 +408,7 @@ footer p {
   }
 
   .intro h1 {
-    font-size: 33px;
+    font-size: 32px;
     margin: 40px auto;
     padding: 0;
     width: 100%;
@@ -419,7 +419,7 @@ footer p {
   }
 
   .intro .pill-button {
-    margin: 0 auto 40px auto;
+    margin: 0 auto 67px auto;
   }
 
   .pill-button {
