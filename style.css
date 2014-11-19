@@ -7,15 +7,19 @@ body {
   color: #444;
   font-family: Georgia, serif;
   font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-ligatures: normal;
   text-rendering: optimizeLegibility;
 }
 
 a {
-  text-decoration: none;
   color: #3ab5a5;
-  -moz-transition: color .15s ease-in-out;
-  -webkit-transition: color .15s ease-in-out;
-  transition: color .15s ease-in-out;
+  text-decoration: none;
+  -moz-transition: .15s ease;
+  -webkit-transition: .15s ease;
+  transition: .15s ease;
 }
 
 a:hover {
@@ -26,47 +30,43 @@ a:focus {
   outline: none;
 }
 
-::-moz-selection { /* Code for Firefox */
-  color: white;
+::-moz-selection {
   background: #7bdfd2;
+  color: white;
 }
 
 ::selection {
-  color: white; 
   background: #7bdfd2;
+  color: white; 
 }
 
 p {
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
   font-size: 18px;
+  font-style: normal; 
+  font-weight: 300;
   line-height: 1.65;
-  font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif; 
-  font-weight: 300; 
-  font-style: normal;
 }
 
 p a {
   font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif; 
-  font-weight: 300; 
   font-style: normal;
+  font-weight: 300; 
 }
 
 h1, h2, h3, h4 {
   color: #2b2b2b;
   font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B', helvetica, arial, sans-serif;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  font-variant: normal;
-  font-variant-ligatures: normal;
 }
 
 h1 {
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
   font-size: 35px;
+  font-style: italic;
+  font-weight: 400;
   line-height: 1.35;
   padding-top: 40px;
-  font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
-  font-weight: 400;
-  font-style: italic;
 }
 
 h1.alt {
@@ -84,14 +84,14 @@ h4 {
 }
 
 .container {
-  width: 920px;
   margin: 0 auto;
+  width: 920px;
 }
 
 .intro {
-  padding: 0 0 65px 0;
   background-image: -webkit-linear-gradient(top, rgba(255,255,255,.88), rgba(255,255,255,.88)), url("images/panel.jpg");
   background-size: cover;
+  padding: 0 0 65px 0;
 }
 
 .intro h1 {
@@ -101,62 +101,61 @@ h4 {
 
 nav {
   display: inline-block;
+  float: right;
   padding: 45px 0 0 0;
   text-align: right;
-  float: right;
 }
 
 nav a {
-  font-size: 15px;
-  padding: 10px 0 0 30px;
   font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B', helvetica, arial, sans-serif;
   font-weight: 300;
+  font-size: 15px;
   font-style: normal;
-}
-
-.deliverables ul {
-  list-style-type: none;
-  display: block;
-  clear: both;
-  overflow: hidden;
-  padding-left: 0;
-}
-
-.deliverables li {
-  display: block;
-  width: 48%;
-  min-height: 182px;
-  float: left;
-  margin-bottom: 20px;
-}
-
-.deliverables li:nth-child(2n) {
-  float: right;
+  padding: 10px 0 0 30px;
 }
 
 .deliverables {
   margin-top: 65px;
 }
 
+.deliverables ul {
+  display: block;
+  clear: both;
+  list-style-type: none;
+  overflow: hidden;
+  padding-left: 0;
+}
+
+.deliverables li {
+  display: block;
+  float: left;
+  margin-bottom: 20px;
+  min-height: 182px;
+  width: 48%;
+}
+
+.deliverables li:nth-child(2n) {
+  float: right;
+}
+
 .work, .about-me, .contact, footer {
   border-top: 1px solid #E2E2E3;
-  padding-top: 60px;
-  padding-bottom: 30px;
-  overflow: hidden;
   clear: both;
+  overflow: hidden;
+  padding: 60px 0 30px 0;
 }
 
 .home-link {
   background-image: url("images/mark.png");
-  display: inline-block;
-  height: 84px;
-  width: 84px;
-  float: left;
   background-size: cover;
+  display: inline-block;
+  float: left;
+  height: 84px;
   margin-top: 18px;
   -moz-transition: .15s ease;
   -webkit-transition: .15s ease;
   transition: .15s ease;
+  width: 84px;
 }
 
 .home-link:hover {
@@ -164,31 +163,25 @@ nav a {
 }
 
 .dribbble-shots ul {
-  list-style-type: none;
   display: block;
   clear: both;
+  list-style-type: none;
   overflow: hidden;
   padding-left: 0;
   padding-top: 18px;
 }
 
 .dribbble-shots li {
-  display: inline-block;
-  float: left;
-  width: 24.5%;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  display: inline-block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 24.5%;
 }
 
 .dribbble-shots li:nth-child(4n) {
   margin-right: 0;
-}
-
-.dribbble-shots li:last-child {
-  margin-bottom: 0;
 }
 
 .dribbble-shots li a img {
@@ -207,19 +200,19 @@ nav a {
 }
 
 .about-me .left {
-  width: 50%;
   float: left;
+  width: 50%;
 }
 
 .about-me .right {
-  width: 420px;
-  height: 420px;
-  float: right;
-  display: block;
   background-image: -webkit-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("images/me.jpg");
   background-size: cover;
   border-radius: 50%;
+  display: block;
+  float: right;
+  height: 420px;
   margin-top: 18px;
+  width: 420px;
 }
 
 .floated-container {
@@ -228,8 +221,8 @@ nav a {
 }
 
 .contact .right, .contact .left {
-  width: 48%;
   float: left;
+  width: 48%;
 }
 
 .contact .right {
@@ -252,8 +245,8 @@ nav a {
   margin-bottom: 8px;
 }
 
-.pill-button {
-  border: 2px solid #3ab5a5;
+.button {
+  border: 2px solid #6DC7B2;
   border-radius: 4px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -263,25 +256,24 @@ nav a {
   font-weight: 300;
   font-style: normal;
   font-size: 18px;
-  margin: 35px auto;
   padding: 17px 0;
-  width: 300px;
   text-align: center;
   -moz-transition: .15s ease;
   -webkit-transition: .15s ease;
   transition: .15s ease;
+  width: 300px;
 }
 
-.pill-button:hover {
-  background-color: #3ab5a5;
+.button:hover {
+  background-color: #6DC7B2;
   color: white;
 }
 
-.intro .pill-button {
+.intro .button {
   margin: 15px auto 18px auto;
 }
 
-.contact .pill-button {
+.contact .button {
   margin: 35px 0;
 }
 
@@ -291,29 +283,29 @@ nav a {
 }
 
 .powered-by span {
-  height: 29px;
-  width: 140px;
-  display: block;
-  margin-top: 1px;
   background-image: url("images/TinyLetter_Wordmark.jpg");
   background-size: cover;
+  display: block;
+  height: 29px;
+  margin-top: 1px;
+  width: 140px;
 }
 
 input[type="text"] {
-  padding: 12px 5px;
-  margin: 17px 0;
-  font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
-  font-weight: 300; 
-  font-style: normal;
-  font-size: 17px;
-  line-height: 1.65;
-  border-radius: 2px;
   border: none;
   border-bottom: 2px solid #c6c6c8;
+  border-radius: 2px;
   box-shadow: none;
-  width: 396px;
-  outline: 0;
   color: #444;
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.65;
+  margin: 17px 0;
+  outline: 0;
+  padding: 12px 5px;
+  width: 300px;
 }
 
 input:focus {
@@ -322,20 +314,26 @@ input:focus {
 
 ::-webkit-input-placeholder {
   font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
-  font-weight: 300; 
   font-style: italic;
+  font-weight: 300;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  font-style: italic; 
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
+  font-style: italic;
+  font-weight: 300;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
   font-style: italic;
+  font-weight: 300;
 }
 
 :-ms-input-placeholder {  
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
   font-style: italic;
+  font-weight: 300;
 }
 
 footer {
@@ -344,26 +342,19 @@ footer {
 }
 
 footer p {
-  font-size: 15px;
   color: #b9b9bb;
+  font-size: 15px;
   text-align: right;
 }
 
 @media only screen and (max-width: 500px) {
 
-  body {
+  body, p {
     font-size: 17px;
   }
 
-  p {
-    font-size: 17px;
-  }
 
-  h3 {
-    font-size: 22px;
-  }
-
-  h4 {
+  h3, h4  {
     font-size: 22px;
   }
 
@@ -379,28 +370,28 @@ footer p {
 
   .home-link {
     display: block;
-    height: 82px;
-    width: 82px;
     float: none;
+    height: 82px;
     margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
+    width: 82px;
   }
 
   nav {
     display: block;
-    padding: 0;
-    margin-top: 25px;
-    text-align: center;
     float: none;
+    margin-top: 25px;
+    padding: 0;
+    text-align: center;
   }
 
   nav a {
-    font-size: 15px;
-    padding: 0 10px;
     font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B', helvetica, arial, sans-serif;
-    font-weight: 300;
+    font-size: 15px;
     font-style: normal;
+    font-weight: 300;
+    padding: 0 10px;
   }
 
   h1.main {
@@ -418,11 +409,11 @@ footer p {
     display: block;
   }
 
-  .intro .pill-button {
-    margin: 0 auto 67px auto;
+  .intro .button {
+    margin: 0 auto 60px auto;
   }
 
-  .pill-button {
+  .button {
     font-size: 16px;
     width: 100%;
   }
@@ -432,9 +423,13 @@ footer p {
   }
 
   .deliverables li {
-    width: 95%;
     float: none;
     margin-bottom: 23px;
+    width: 95%;
+  }
+
+  .dribbble-shots li:last-child {
+    margin-bottom: 0;
   }
 
   .deliverables li:nth-child(2n) {
@@ -448,18 +443,18 @@ footer p {
   }
 
   .dribbble-shots li img {
-    width: 100%;
     height: auto;
     margin-right: auto;
     margin-left: auto;
+    width: 100%;
   }
 
   .work, .about-me, .contact, footer {
     border-top: 1px solid #E2E2E3;
+    clear: both;
+    overflow: hidden;
     padding-top: 40px;
     padding-bottom: 23px;
-    overflow: hidden;
-    clear: both;
   }
 
   .about-me h3, .work h3, .contact h3 {
@@ -467,21 +462,21 @@ footer p {
   }
 
   .about-me .left {
-    width: 100%;
     float: none;
+    width: 100%;
   }  
 
   .about-me .right {
     display: block;
-    width: 288px;
+    float: none;
     height: 288px;
     margin: 8px auto;
-    float: none;
+    width: 288px;
   }
 
   .contact .right, .contact .left {
-    width: 100%;
     float: none;
+    width: 100%;
   }
 
   .contact .left {
@@ -489,14 +484,14 @@ footer p {
   }
 
   .contact .right {
-    float: none;
     border-top: 1px solid #E2E2E3;
+    float: none;
     padding-top: 40px;
   }
 
   .contact ul {
-    padding-left: 25px;
     margin-top: 18px;
+    padding-left: 25px;
   }
 
   .contact ul li a {
@@ -504,9 +499,10 @@ footer p {
   }
 
   input[type="text"] {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 8px 0;
     width: 100%;
-    box-sizing: border-box;
   }
 
   footer {
