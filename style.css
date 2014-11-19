@@ -404,18 +404,16 @@ footer p {
     font-style: normal;
   }
 
-  .intro h1 {
-    display: block;
-    font-size: 22px;
-    margin: 30px auto;
-    font-weight: 400;
-    text-align: center;
-    padding: 0;
-    width: 100%;
-  }
-
   h1.main {
     display: none;
+  }
+
+  .intro h1 {
+    font-weight: 400;
+    text-align: center;
+    margin: 40px auto;
+    padding: 0;
+    width: 100%;
   }
 
   h1.alt {
