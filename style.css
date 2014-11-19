@@ -1,0 +1,331 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  color: #444;
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3ab5a5;
+  -moz-transition: color .15s ease-in-out;
+  -webkit-transition: color .15s ease-in-out;
+  transition: color .15s ease-in-out;
+}
+
+a:hover {
+  color: #7bdfd2;
+}
+
+a:focus {
+  outline: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #7bdfd2;
+}
+
+::selection {
+  color: white; 
+  background: #7bdfd2;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.65;
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B'; 
+  font-weight: 300; 
+  font-style: normal;
+}
+
+p a {
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B'; 
+  font-weight: 300; 
+  font-style: normal;
+}
+
+h1, h2, h3, h4 {
+  color: #2b2b2b;
+  font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B';
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-ligatures: normal;
+}
+
+h1 {
+  font-size: 35px;
+  font-style: normal;
+  line-height: 1.35;
+  padding-top: 40px;
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B';
+  font-weight: 400; 
+  font-style: italic;
+}
+
+h3 {
+  font-size: 27px;
+  margin: 0 0 35px 0;
+}
+
+h4 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.container {
+  width: 920px;
+  margin: 0 auto;
+}
+
+.intro {
+  padding: 0 0 65px 0;
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.88), rgba(255,255,255,.88)), url("images/panel.jpg");
+  background-size: cover;
+}
+
+.intro h1 {
+  margin: 25px auto 45px auto;
+  text-align: center;
+}
+
+nav {
+  display: inline-block;
+  padding: 45px 0 0 0;
+  text-align: right;
+  float: right;
+}
+
+nav a {
+  font-size: 15px;
+  padding: 10px 0 0 30px;
+  font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B';
+  font-weight: 400;
+  font-style: normal;
+}
+
+.deliverables ul {
+  list-style-type: none;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  padding-left: 0;
+}
+
+.deliverables li {
+  display: block;
+  width: 48%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.deliverables li:nth-child(2n) {
+  float: right;
+}
+
+.deliverables {
+  margin-top: 65px;
+}
+
+.work, .about-me, .contact, footer {
+  border-top: 1px solid #E2E2E3;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  overflow: hidden;
+  clear: both;
+}
+
+.home-link {
+  background-image: url("images/mark.png");
+  display: inline-block;
+  height: 84px;
+  width: 84px;
+  background-size: cover;
+  margin-top: 18px;
+  -moz-transition: opacity .15s ease-in-out;
+  -webkit-transition: opacity .15s ease-in-out;
+  transition: opacity .15s ease-in-out;
+}
+
+.home-link:hover {
+  opacity: .5;
+}
+
+.dribbble-shots ul {
+  list-style-type: none;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  padding-left: 0;
+  padding-top: 18px;
+}
+
+.dribbble-shots li {
+  display: inline-block;
+  float: left;
+  width: 24.5%;
+  box-sizing: border-box;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.dribbble-shots li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.dribbble-shots li a img {
+  opacity: .9;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+
+.dribbble-shots li a:hover img {
+  opacity: .5;
+}
+
+.about-me h3 {
+  margin-bottom: 18px;
+}
+
+.about-me .left {
+  width: 50%;
+  float: left;
+}
+
+.about-me .right {
+  width: 420px;
+  height: 420px;
+  float: right;
+  display: block;
+  background-image: -webkit-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("images/me.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  margin-top: 18px;
+}
+
+.floated-container {
+  clear: both;
+  overflow: hidden;
+}
+
+.contact .right, .contact .left {
+  width: 48%;
+  float: left;
+}
+
+.contact .right {
+  float: right;
+}
+
+.contact ul {
+  display: block;
+  margin-top: 0;
+  padding-left: 30px;
+}
+
+.contact ul li a {
+  display: block;
+  font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.65;
+  margin-bottom: 8px;
+}
+
+.pill-button {
+  border: 2px solid #3ab5a5;
+  border-radius: 4px;
+  color: #35a697;
+  display: block;
+  font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin: 35px auto;
+  padding: 17px 0;
+  width: 300px;
+  text-align: center;
+  -webkit-transition: .15s ease;
+}
+
+.pill-button:hover {
+  background-color: #3ab5a5;
+  color: white;
+}
+
+.intro .pill-button {
+  margin: 15px auto 18px auto;
+}
+
+.contact .pill-button {
+  margin: 35px 0;
+}
+
+.powered-by a {
+  color: #444;
+  display: inline-block;
+}
+
+.powered-by span {
+  height: 29px;
+  width: 140px;
+  display: block;
+  margin-top: 1px;
+  background-image: url("images/TinyLetter_Wordmark.jpg");
+  background-size: cover;
+}
+
+input[type="text"] {
+  padding: 12px;
+  margin: 17px 0;
+  font-family: 'Sentinel SSm A', 'Sentinel SSm B';
+  font-weight: 400; 
+  font-style: normal;
+  font-size: 17px;
+  line-height: 1.65;
+  border-radius: 2px;
+  border: 1px solid #c6c6c8;
+  box-shadow: none;
+  width: 396px;
+  outline: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+  color: #b9b9bb;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-style: italic;
+  color: #b9b9bb; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-style: italic;
+  color: #b9b9bb;
+}
+
+:-ms-input-placeholder {  
+  font-style: italic;
+  color: #b9b9bb;
+}
+
+footer {
+  border-top: 1px solid #E2E2E3;
+  padding: 5px 0 30px 0;
+}
+
+footer p {
+  font-size: 15px;
+  color: #b9b9bb;
+  text-align: right;
+}
