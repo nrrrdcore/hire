@@ -398,8 +398,9 @@ footer p {
 
   .intro h1 {
     display: block;
-    font-size: 25px;
+    font-size: 18px;
     margin: 25px auto;
+    font-weight: 400;
     padding: 0;
     width: 100%;
   }
