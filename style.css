@@ -360,6 +360,10 @@ footer p {
     font-size: 22px;
   }
 
+  h4 {
+    font-size: 22px;
+  }
+
   .container {
     width: 90%;
     overflow: hidden;
@@ -398,7 +402,7 @@ footer p {
 
   .intro h1 {
     display: block;
-    font-size: 18px;
+    font-size: 22px;
     margin: 25px auto;
     font-weight: 400;
     text-align: left;
