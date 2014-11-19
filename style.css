@@ -62,11 +62,10 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 35px;
-  font-style: normal;
   line-height: 1.35;
   padding-top: 40px;
   font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
-  font-weight: 400; 
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -409,8 +408,7 @@ footer p {
   }
 
   .intro h1 {
-    font-weight: 400;
-    text-align: center;
+    font-size: 33px;
     margin: 40px auto;
     padding: 0;
     width: 100%;
