@@ -6,7 +6,7 @@ html, body {
 body {
   color: #444;
   font-family: Georgia, serif;
-  font-size: 17px;
+  font-size: 18px;
   font-stretch: normal;
   font-style: normal;
   font-variant: normal;
@@ -146,6 +146,7 @@ nav a {
   display: block;
   float: left;
   margin-bottom: 25px;
+  min-height: 184px;
   width: 48%;
 }
 
