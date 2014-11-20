@@ -381,9 +381,9 @@ footer p {
 
   .home-link {
     display: block;
-    height: 65px;
-    margin-top: 0;
-    width: 65px;
+    height: 56px;
+    margin-top: 5px;
+    width: 56px;
   }
 
   nav {
