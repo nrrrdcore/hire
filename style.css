@@ -146,8 +146,8 @@ nav a {
   display: block;
   float: left;
   margin-bottom: 25px;
-  min-height: 184px;
-  width: 48%;
+  min-height: 190px;
+  width: 47.5%;
 }
 
 .deliverables li:nth-child(2n) {
@@ -202,23 +202,19 @@ nav a {
 
 .about-me .left {
   float: left;
-  width: 51%;
+  width: 50%;
 }
 
 .about-me .right {
-  background-image: -webkit-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("images/me.jpg");
-  background-image: -webkit-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("images/me.jpg");
-  background-image: -moz-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("images/me.jpg");
-  background-image: -o-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("images/me.jpg");
-  background-image: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("images/me.jpg");
+  background-image: url("images/me.jpg");
   background-size: cover;
   border-radius: 50%;
   display: block;
   float: right;
-  height: 352px;
+  height: 370px;
   margin-top: 20px;
   margin-right: 40px;
-  width: 352px;
+  width: 370px;
 }
 
 .floated-container {
