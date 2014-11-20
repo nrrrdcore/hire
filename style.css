@@ -6,7 +6,7 @@ html, body {
 body {
   color: #444;
   font-family: Georgia, serif;
-  font-size: 18px;
+  font-size: 17px;
   font-stretch: normal;
   font-style: normal;
   font-variant: normal;
@@ -58,7 +58,7 @@ h1 {
   font-size: 35px;
   font-style: italic;
   font-weight: 400;
-  line-height: 1.35;
+  line-height: 1.45;
   padding-top: 40px;
 }
 
@@ -73,7 +73,7 @@ h3 {
 
 h4 {
   font-size: 25px;
-  margin: 0;
+  margin: 0 0 25px 0;
 }
 
 .container {
@@ -139,13 +139,13 @@ nav a {
   list-style-type: none;
   overflow: hidden;
   padding-left: 0;
+  margin-bottom: 15px;
 }
 
 .deliverables li {
   display: block;
   float: left;
-  margin-bottom: 20px;
-  min-height: 182px;
+  margin-bottom: 25px;
   width: 48%;
 }
 
@@ -157,7 +157,7 @@ nav a {
   border-top: 1px solid #E2E2E3;
   clear: both;
   overflow: hidden;
-  padding: 60px 0 30px 0;
+  padding: 60px 0 40px 0;
 }
 
 .dribbble-shots ul {
@@ -201,7 +201,7 @@ nav a {
 
 .about-me .left {
   float: left;
-  width: 50%;
+  width: 51%;
 }
 
 .about-me .right {
@@ -214,9 +214,10 @@ nav a {
   border-radius: 50%;
   display: block;
   float: right;
-  height: 420px;
-  margin-top: 18px;
-  width: 420px;
+  height: 352px;
+  margin-top: 20px;
+  margin-right: 40px;
+  width: 352px;
 }
 
 .floated-container {
@@ -354,7 +355,7 @@ footer p {
   text-align: right;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) and (min-device-width : 768px) and (max-device-width : 1024px) {
 
   body, p {
     font-size: 17px;
@@ -519,5 +520,11 @@ footer p {
 
   footer p {
     text-align: left;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .container {
+
   }
 }
