@@ -211,10 +211,9 @@ nav a {
   border-radius: 50%;
   display: block;
   float: right;
-  height: 370px;
+  height: 400px;
   margin-top: 20px;
-  margin-right: 40px;
-  width: 370px;
+  width: 400px;
 }
 
 .floated-container {
@@ -224,7 +223,7 @@ nav a {
 
 .contact .right, .contact .left {
   float: left;
-  width: 48%;
+  width: 47.5%;
 }
 
 .contact .right {
