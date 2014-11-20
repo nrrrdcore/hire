@@ -351,7 +351,7 @@ footer p {
   text-align: right;
 }
 
-@media only screen and (max-width: 500px) and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (max-width: 500px) {
 
   body, p {
     font-size: 17px;
