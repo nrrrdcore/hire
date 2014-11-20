@@ -10,13 +10,13 @@ body {
   font-stretch: normal;
   font-style: normal;
   font-variant: normal;
-  font-variant-ligatures: normal;
   text-rendering: optimizeLegibility;
 }
 
 a {
   color: #3ab5a5;
   text-decoration: none;
+  -o-transition: .15s ease;
   -moz-transition: .15s ease;
   -webkit-transition: .15s ease;
   transition: .15s ease;
@@ -42,16 +42,9 @@ a:focus {
 
 p {
   font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
-  font-size: 18px;
   font-style: normal; 
   font-weight: 300;
   line-height: 1.65;
-}
-
-p a {
-  font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif; 
-  font-style: normal;
-  font-weight: 300; 
 }
 
 h1, h2, h3, h4 {
@@ -69,7 +62,7 @@ h1 {
   padding-top: 40px;
 }
 
-h1.alt {
+.alt {
   display: none;
 }
 
@@ -89,9 +82,31 @@ h4 {
 }
 
 .intro {
+  background-image: -webkit-gradient(linear, top, rgba(255,255,255,.88), rgba(255,255,255,.88)), url("images/panel.jpg");
   background-image: -webkit-linear-gradient(top, rgba(255,255,255,.88), rgba(255,255,255,.88)), url("images/panel.jpg");
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.88), rgba(255,255,255,.88)), url("images/panel.jpg");
+  background-image: -o-linear-gradient(top, rgba(255,255,255,.88), rgba(255,255,255,.88)), url("images/panel.jpg");
+  background-image: linear-gradient(top, rgba(255,255,255,.88), rgba(255,255,255,.88)), url("images/panel.jpg");
   background-size: cover;
   padding: 0 0 65px 0;
+}
+
+.home-link {
+  background-image: url("images/mark.png");
+  background-size: cover;
+  display: block;
+  float: left;
+  height: 84px;
+  margin-top: 18px;
+  -o-transition: .15s ease;
+  -moz-transition: .15s ease;
+  -webkit-transition: .15s ease;
+  transition: .15s ease;
+  width: 84px;
+}
+
+.home-link:hover {
+  opacity: .5;
 }
 
 .intro h1 {
@@ -100,7 +115,7 @@ h4 {
 }
 
 nav {
-  display: inline-block;
+  display: block;
   float: right;
   padding: 45px 0 0 0;
   text-align: right;
@@ -145,23 +160,6 @@ nav a {
   padding: 60px 0 30px 0;
 }
 
-.home-link {
-  background-image: url("images/mark.png");
-  background-size: cover;
-  display: inline-block;
-  float: left;
-  height: 84px;
-  margin-top: 18px;
-  -moz-transition: .15s ease;
-  -webkit-transition: .15s ease;
-  transition: .15s ease;
-  width: 84px;
-}
-
-.home-link:hover {
-  opacity: .5;
-}
-
 .dribbble-shots ul {
   display: block;
   clear: both;
@@ -172,9 +170,10 @@ nav a {
 }
 
 .dribbble-shots li {
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  display: inline-block;
+  display: block;
   float: left;
   margin: 0 5px 5px 0;
   width: 24.5%;
@@ -186,9 +185,10 @@ nav a {
 
 .dribbble-shots li a img {
   opacity: .9;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  transition: opacity .25s ease-in-out;
+  -o-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
 }
 
 .dribbble-shots li a:hover img {
@@ -205,7 +205,11 @@ nav a {
 }
 
 .about-me .right {
+  background-image: -webkit-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("images/me.jpg");
   background-image: -webkit-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("images/me.jpg");
+  background-image: -moz-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("images/me.jpg");
+  background-image: -o-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("images/me.jpg");
+  background-image: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("images/me.jpg");
   background-size: cover;
   border-radius: 50%;
   display: block;
@@ -248,6 +252,7 @@ nav a {
 .button {
   border: 2px solid #6DC7B2;
   border-radius: 4px;
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: #35a697;
@@ -255,9 +260,9 @@ nav a {
   font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B', helvetica, arial, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 18px;
   padding: 17px 0;
   text-align: center;
+  -o-transition: .15s ease;
   -moz-transition: .15s ease;
   -webkit-transition: .15s ease;
   transition: .15s ease;
@@ -296,6 +301,9 @@ input[type="text"] {
   border-bottom: 2px solid #c6c6c8;
   border-radius: 2px;
   box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   color: #444;
   font-family: 'Sentinel SSm A', 'Sentinel SSm B', georgia, serif;
   font-size: 17px;
@@ -303,7 +311,6 @@ input[type="text"] {
   font-weight: 300;
   line-height: 1.65;
   margin: 17px 0;
-  outline: 0;
   padding: 12px 5px;
   width: 300px;
 }
@@ -353,9 +360,12 @@ footer p {
     font-size: 17px;
   }
 
-
   h3, h4  {
     font-size: 22px;
+  }
+
+  h3 {
+    margin-bottom: 7px;
   }
 
   .container {
@@ -394,7 +404,7 @@ footer p {
     padding: 0 10px;
   }
 
-  h1.main {
+  .main {
     display: none;
   }
 
@@ -405,7 +415,7 @@ footer p {
     width: 100%;
   }
 
-  h1.alt {
+  .alt {
     display: block;
   }
 
@@ -457,10 +467,6 @@ footer p {
     padding-bottom: 23px;
   }
 
-  .about-me h3, .work h3, .contact h3 {
-    margin-bottom: 7px;
-  }
-
   .about-me .left {
     float: none;
     width: 100%;
@@ -499,6 +505,7 @@ footer p {
   }
 
   input[type="text"] {
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 8px 0;
